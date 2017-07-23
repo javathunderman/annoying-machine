@@ -1,0 +1,31 @@
+{
+  "name": "hello-react",
+  "version": "0.0.1",
+  "description": "Code for JS-talks in EPAM Systems",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.4.3",
+    "express": "^4.4.5",
+    "socket.io": "^1.3.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stremann/hello-react.git"
+  },
+  "keywords": [
+    "react",
+    "jstalks",
+    "comment",
+    "example"
+  ],
+  "author": "stremann",
+  "bugs": {
+    "url": "https://github.com/stremann/hello-react/issues"
+  },
+  "homepage": "https://github.com/stremann/hello-react"
+}

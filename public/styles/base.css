@@ -1,0 +1,51 @@
+body {
+    background: #000;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+h3 {
+    color: white;
+}
+
+#content {
+    background: black;
+    padding: 50px;
+    width: 600px;
+    margin: auto;
+}
+
+.comment {
+    border: 1px #ddd solid;
+    padding: 20px;
+}
+.comment .author {
+    font-weight: bold;
+    color: #ddd
+}
+.comment .body {
+    padding-top: 5px;
+    color: #ddd;
+}
+
+.commentForm {
+    margin-top: 20px;
+}
+.commentForm input,
+.commentForm textarea {
+    width: 100%;
+    margin-bottom: 5px;
+    border: 1px #ddd solid;
+    padding: 5px;
+    background: #000000;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: medium;
+}
+.commentForm button {
+    background: #000000;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: medium;
+}
