@@ -64,7 +64,7 @@ var CommentForm = React.createClass({
         var submitButton = this.refs.submitButton.getDOMNode();
         submitButton.innerHTML = 'Posting comment...';
         submitButton.setAttribute('disabled', 'disabled');
-        this.props.submitComment(comment, function (err) {
+        this.props.submitComment(comment, function(err) {
             that.refs.author.getDOMNode().value = '';
             that.refs.text.getDOMNode().value = '';
             submitButton.innerHTML = 'Post comment';
