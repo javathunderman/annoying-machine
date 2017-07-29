@@ -5,13 +5,6 @@ var express = require('express');
 var util = require('util');
 var say = require('say');
 var app = express();
-var log_file = fs.createWriteStream(__dirname + '/debug.log', {flags : 'w'});
-var log_stdout = process.stdout;
-
-console.log = function(message) { //
-  log_file.write(util.format(message) + '\n');
-  log_stdout.write(util.format(message) + '\n');
-};
 
 app.use('/', express.static(path.join(__dirname, 'public')));
 
