@@ -77,6 +77,7 @@ var CommentForm = React.createClass({
                 <input maxLength={30} type="text" name="author" ref="author" placeholder="Name" required /><br/>
                 <textarea maxLength={50} name="text" ref="text" placeholder="Message" required></textarea><br/>
                 <button type="submit" ref="submitButton">Post comment</button>
+		<p>Please do not send UTF 8 characters, the text to speech software can't process them</p>
             </form>
         );
     }
