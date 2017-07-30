@@ -38,9 +38,9 @@ io.on('connection', function(socket) {
 		if (commentAuthor.length <= 30 && commentBody.length <= 50) {
 		    say.speak(commentAuthor + " says " + commentBody);
 		    fs.writeFile('_comments.json', JSON.stringify(comments, null, 4), function(err) {
-		    io.emit('comments', comments);
-		    callback(err);
-            		});
+		    	io.emit('comments', comments);
+			callback(err);
+            	    });
 		}
         });
     });
