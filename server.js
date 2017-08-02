@@ -35,7 +35,17 @@ io.on('connection', function(socket) {
 	    commentAuthor = (comment.author);
             commentBody = (comment.text);
 
-		if (commentAuthor.length <= 30 && commentBody.length <= 50) {
+	if (commentAuthor.indexOf('meanword') > -1 && commentBody.indexOf('meanword') > -1) {
+		    console.log("Yeah, no.");
+		    comment.author = "I don't know what is respectful online.";
+		    comment.text = "Instead, enjoy this: https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+		fs.writeFile('_comments.json', JSON.stringify(comments, null, 4), function(err) {
+		    	io.emit('comments', comments);
+			callback(err);
+            	    });
+}
+
+	else if (commentAuthor.length <= 30 && commentBody.length <= 50) {
 		    say.speak(commentAuthor + " says " + commentBody);
 		    fs.writeFile('_comments.json', JSON.stringify(comments, null, 4), function(err) {
 		    	io.emit('comments', comments);
