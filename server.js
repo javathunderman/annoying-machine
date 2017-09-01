@@ -35,10 +35,10 @@ io.on('connection', function(socket) {
 	    commentAuthor = (comment.author);
             commentBody = (comment.text);
 
-	if (commentAuthor.indexOf('meanword') > -1 && commentBody.indexOf('meanword') > -1) { //if you're implementing this
-		    console.log("Yeah, no.");						     //make sure it's case insensitive
-		    comment.author = "This is why we can't have nice things";
-		    comment.text = "Instead, enjoy this: https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+	if (commentAuthor.indexOf('hatespeech') > -1 || commentBody.indexOf('hatespeech') > -1 || commentAuthor.indexOf('censored') > -1 || commentBody.indexOf('censored') > -1 || commentAuthor.indexOf('asdf') > -1 || commentBody.indexOf('asdf') > -1 || commentAuthor.indexOf('asdf') > -1 || commentBody.indexOf('asdf') > -1) {
+		    console.log("Yeah, no.");
+		    comment.author = "This is why we can't have nice things.";
+		    comment.text = "Instead of my message, enjoy this: https://www.youtube.com/watch?v=dQw4w9WgXcQ"
 		fs.writeFile('_comments.json', JSON.stringify(comments, null, 4), function(err) {
 		    	io.emit('comments', comments);
 			callback(err);
