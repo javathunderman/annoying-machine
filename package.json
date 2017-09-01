@@ -1,7 +1,7 @@
 {
-  "name": "hello-react",
+  "name": "annoying-machine",
   "version": "0.0.1",
-  "description": "Code for JS-talks in EPAM Systems",
+  "description": "Web app that lets users submit mesages to be read aloud by a TTS package.",
   "main": "server.js",
   "dependencies": {
     "body-parser": "^1.4.3",
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/stremann/hello-react.git"
+    "url": "https://github.com/javathunderman/annoying-machine.git"
   },
   "keywords": [
     "react",
@@ -25,7 +25,7 @@
   ],
   "author": "stremann",
   "bugs": {
-    "url": "https://github.com/stremann/hello-react/issues"
+    "url": "https://github.com/javathunderman/annoying-machine/issues/"
   },
-  "homepage": "https://github.com/stremann/hello-react"
+  "homepage": "https://annoy.nomik.xyz"
 }
